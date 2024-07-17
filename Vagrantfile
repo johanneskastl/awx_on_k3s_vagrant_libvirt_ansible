@@ -32,6 +32,20 @@ Vagrant.configure("2") do |config|
       trigger.run = {inline: "rm -vf ansible/k3s-kubeconfig"}
     end # node.trigger.after
 
+    node.trigger.after :destroy do |trigger|
+      trigger.warn = "Removing ansible/awx.crt"
+      trigger.run = {inline: "rm -vf ansible/awx.crt"}
+    end # node.trigger.after
+
+    node.trigger.after :destroy do |trigger|
+      trigger.warn = "Removing ansible/awx.key"
+      trigger.run = {inline: "rm -vf ansible/awx.key"}
+    end # node.trigger.after
+
+    node.trigger.after :destroy do |trigger|
+      trigger.warn = "Removing ansible/awx.csr"
+      trigger.run = {inline: "rm -vf ansible/awx.csr"}
+    end # node.trigger.after
   end # config.vm.define servers
 
 end # Vagrant.configure
