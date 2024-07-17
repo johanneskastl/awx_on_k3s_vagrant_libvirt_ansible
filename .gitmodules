@@ -4,3 +4,6 @@
 [submodule "ansible/roles/johanneskastl.install_k3s"]
 	path = ansible/roles/johanneskastl.install_k3s
 	url = https://github.com/johanneskastl/ansible-role-install_k3s
+[submodule "ansible/roles/johanneskastl.add_screenrc"]
+	path = ansible/roles/johanneskastl.add_screenrc
+	url = https://github.com/johanneskastl/ansible-role-add_screenrc.git
