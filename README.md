@@ -1,7 +1,9 @@
-# k3s_vagrant_libvirt_ansible
+# awx_on_k3s_vagrant_libvirt_ansible
 
-This setup creates a VM with Ubuntu 22.04, installs microk8s and then AWX on top
-of it.
+Vagrant-libvirt setup that creates a VM with k3s.
+
+On top of k3s Ansible installs [AWX](https://github.com/ansible/awx), the
+web-based UI for running Ansible.
 
 Default OS is openSUSE Leap 15.6, but that can be changed in the Vagrantfile.
 Please be aware, that this might break the Ansible provisioning.
