@@ -51,7 +51,7 @@
         validate_certs: false
       register: result
       until: 'result.status == 200'
-      retries: 11
+      retries: 31
       delay: 10
 
     - name: 'Find out the AWX admin password'
