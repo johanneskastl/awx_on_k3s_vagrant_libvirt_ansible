@@ -51,7 +51,7 @@
             name: awx-ingress
             namespace: awx
           spec:
-            ingressClassName: nginx
+            ingressClassName: traefik
             tls:
             - hosts:
               - "awx.{{ external_ip | default(ansible_default_ipv4['address']) }}.sslip.io"
