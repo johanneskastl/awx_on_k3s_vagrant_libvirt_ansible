@@ -9,8 +9,8 @@
 - name: 'Run playbook-create_certificate.yml'
   ansible.builtin.import_playbook: playbook-create_certificate.yml
 
-- name: 'Run playbook-all_nodes-kubernetes_preparation.yml'
-  ansible.builtin.import_playbook: playbook-all_nodes-kubernetes_preparation.yml
+- name: 'Run playbook-kubernetes_preparation.yml'
+  ansible.builtin.import_playbook: playbook-kubernetes_preparation.yml
 
 - name: 'Run playbook-all_nodes-kubernetes_secret_for_awx.yml'
   ansible.builtin.import_playbook: playbook-all_nodes-kubernetes_secret_for_awx.yml
