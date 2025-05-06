@@ -6,8 +6,8 @@
 - name: 'Run playbook-install_k3s.yml'
   ansible.builtin.import_playbook: playbook-install_k3s.yml
 
-- name: 'Run playbook-all_nodes-create_certificate.yml'
-  ansible.builtin.import_playbook: playbook-all_nodes-create_certificate.yml
+- name: 'Run playbook-create_certificate.yml'
+  ansible.builtin.import_playbook: playbook-create_certificate.yml
 
 - name: 'Run playbook-all_nodes-kubernetes_preparation.yml'
   ansible.builtin.import_playbook: playbook-all_nodes-kubernetes_preparation.yml
