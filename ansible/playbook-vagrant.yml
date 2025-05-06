@@ -3,9 +3,6 @@
 - name: 'Run playbook-bootstrap_python.yml'
   ansible.builtin.import_playbook: playbook-bootstrap_python.yml
 
-- name: 'Run playbook-all_nodes-install_tmux.yml'
-  ansible.builtin.import_playbook: playbook-all_nodes-install_tmux.yml
-
 - name: 'Run playbook-all_nodes-minimal_tmux_configuration.yml'
   ansible.builtin.import_playbook: playbook-all_nodes-minimal_tmux_configuration.yml
 
