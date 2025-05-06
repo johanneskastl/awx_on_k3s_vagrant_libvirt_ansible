@@ -3,9 +3,6 @@
 - name: 'Run playbook-bootstrap_python.yml'
   ansible.builtin.import_playbook: playbook-bootstrap_python.yml
 
-- name: 'Run playbook-all_nodes-minimal_bashrc.yml'
-  ansible.builtin.import_playbook: playbook-all_nodes-minimal_bashrc.yml
-
 - name: 'Run playbook-install_k3s.yml'
   ansible.builtin.import_playbook: playbook-install_k3s.yml
 
