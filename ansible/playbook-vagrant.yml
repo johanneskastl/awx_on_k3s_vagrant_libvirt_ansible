@@ -18,5 +18,5 @@
 - name: 'Run playbook-awx_operator_per_ansible_kustomize.yml'
   ansible.builtin.import_playbook: playbook-awx_operator_per_ansible_kustomize.yml
 
-- name: 'Run playbook-all_nodes-install_awx_in_kubernetes.yml'
-  ansible.builtin.import_playbook: playbook-all_nodes-install_awx_in_kubernetes.yml
+- name: 'Run playbook-install_awx_in_kubernetes.yml'
+  ansible.builtin.import_playbook: playbook-install_awx_in_kubernetes.yml
