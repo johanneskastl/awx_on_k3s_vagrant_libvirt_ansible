@@ -7,6 +7,9 @@ Vagrantfile.1
 # ignore kubeconfig fetched from the machine
 ansible/k3s-kubeconfig
 
+# ignore the file for the dockerhub token, if it exists
+ansible/group_vars/all/k3s_configure_private_registries.yml
+
 # ignore file containing a specific version
 ansible/group_vars/all/awx_operator_version.yml
 
